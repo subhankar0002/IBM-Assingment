@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    pading:0;
+}
+body{
+    justify-contect: center;
+    align-item:center;
+
+}
+.parent{
+    width:70%;
+    border:2px solid black;
+    display: flex;
+    justify-content:center;
+    align-item:center
+}
+
+.color{
+    margin-bottom:2px;
+    height:40px;
+    width:70px;
+    background-color: red;
+}
+.card1{
+    border:2px solid black;
+
+}
