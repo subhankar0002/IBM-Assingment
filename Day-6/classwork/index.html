@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #parent{
+            background-color: #293733;
+            border: solid 2px black;
+            height: 500px;  
+            width: 80%;
+        
+        }
+        #child{
+            background-color: #013e3e;
+            border: solid 2px red;
+            height: 200px;
+            width: 60%;
+            right: 100px
+        }
+        #grand-child{
+            background-color: rgb(255, 250, 242);
+        }
+        #child>#chatbot{
+            background-color: rgb(83, 86, 86);
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            border: 2px solid black;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .box{
+            height: 300px;
+            width: 200px;
+            border: 1px solid black;
+            background-color: aliceblue;
+            position: fixed;
+            bottom: 110px;
+            right: 10px;
+            display: none;
+            
+        }
+        #toggle:checked ~ .box {
+            display: block;
+        }
+        #toggle {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id ="parent">
+        <div id="child">
+            <p>Welcome</p>
+            <input type="checkbox" id="toggle">
+            <label for="toggle" id="chatbot">
+                <img src="https://i.pinimg.com/736x/a5/39/07/a53907b134abfe7fdc26da8eeef1e268.jpg" alt="Chatbot">
+            </label>
+            <div id="grand-child">
+                <p>Hi, Subhankar</p>
+            </div>
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ex adipisci, eveniet porro sit corrupti. Distinctio, molestias. Sed tenetur illo, hic, praesentium recusandae earum et provident, aliquid in voluptatem suscipit?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
