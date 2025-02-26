@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="moviestyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie List</h1>
+        <input type="text" id="search" placeholder="Search movies..." oninput="filterMovies()">
+        <table>
+            <thead>
+                <tr>
+                    <th onclick="sortMovies('name')">Name</th>
+                    <th>Description</th>
+                    <th onclick="sortMovies('year')">Year</th>
+                    <th onclick="sortMovies('rating')">Rating</th>
+                    <th>Genre</th>
+                    <th>Poster</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="movieList"></tbody>
+        </table>
+        <button onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
